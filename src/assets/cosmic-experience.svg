@@ -1,0 +1,101 @@
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Large central star -->
+  <path d="M200 80L215 140L275 160L215 180L200 240L185 180L125 160L185 140L200 80Z" fill="white">
+    <animate attributeName="fill-opacity" values="1;0.7;1" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Smaller stars scattered around -->
+  <path d="M100 60L104 72L116 76L104 80L100 92L96 80L84 76L96 72L100 60Z" fill="white" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="4s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M320 120L324 132L336 136L324 140L320 152L316 140L304 136L316 132L320 120Z" fill="white" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.5;0.8" dur="5s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M80 260L84 272L96 276L84 280L80 292L76 280L64 276L76 272L80 260Z" fill="white" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="4.5s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M340 220L344 232L356 236L344 240L340 252L336 240L324 236L336 232L340 220Z" fill="white" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.6;0.9" dur="3.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Smaller twinkling dots -->
+  <circle cx="150" cy="100" r="2" fill="white">
+    <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="280" cy="180" r="2" fill="white">
+    <animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="120" cy="200" r="1.5" fill="white">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2.5s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="350" cy="300" r="1.5" fill="white">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="200" cy="320" r="2" fill="white">
+    <animate attributeName="opacity" values="1;0.2;1" dur="2.7s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Star trails/cosmic streams -->
+  <path d="M100 160C150 180 200 160 250 200C300 240 350 200 380 220" stroke="white" stroke-width="1" stroke-dasharray="4,4" opacity="0.5">
+    <animate attributeName="stroke-dashoffset" values="0;-20" dur="5s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M50 220C100 200 150 240 200 220C250 200 300 240 350 180" stroke="white" stroke-width="1" stroke-dasharray="6,6" opacity="0.4">
+    <animate attributeName="stroke-dashoffset" values="0;-40" dur="7s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M150 50C180 100 220 120 250 100C280 80 300 120 340 100" stroke="white" stroke-width="1" stroke-dasharray="3,3" opacity="0.6">
+    <animate attributeName="stroke-dashoffset" values="0;-30" dur="6s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Cosmic nebula/cloud effect -->
+  <radialGradient id="nebula1" cx="70%" cy="30%" r="70%" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="white" stop-opacity="0.2" />
+    <stop offset="100%" stop-color="white" stop-opacity="0" />
+  </radialGradient>
+  
+  <radialGradient id="nebula2" cx="30%" cy="70%" r="60%" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="white" stop-opacity="0.15" />
+    <stop offset="100%" stop-color="white" stop-opacity="0" />
+  </radialGradient>
+  
+  <ellipse cx="280" cy="120" rx="120" ry="80" fill="url(#nebula1)" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="10s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <ellipse cx="120" cy="280" rx="100" ry="70" fill="url(#nebula2)" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="8s" repeatCount="indefinite" />
+  </ellipse>
+  
+  <!-- Subtle pulse effect around the center -->
+  <circle cx="200" cy="160" r="70" fill="white" fill-opacity="0.05">
+    <animate attributeName="r" values="70;90;70" dur="8s" repeatCount="indefinite" />
+    <animate attributeName="fill-opacity" values="0.05;0.1;0.05" dur="8s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Shooting star animation -->
+  <g>
+    <line x1="40" y1="40" x2="120" y2="120" stroke="white" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite" begin="1s"/>
+    </line>
+    <circle cx="40" cy="40" r="2" fill="white">
+      <animate attributeName="opacity" values="0;1;0" dur="7s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+  
+  <g>
+    <line x1="360" y1="80" x2="280" y2="160" stroke="white" stroke-width="2" stroke-linecap="round">
+      <animate attributeName="opacity" values="0;1;0" dur="9s" repeatCount="indefinite" begin="4s"/>
+    </line>
+    <circle cx="360" cy="80" r="2" fill="white">
+      <animate attributeName="opacity" values="0;1;0" dur="9s" repeatCount="indefinite" begin="4s"/>
+    </circle>
+  </g>
+</svg> 
